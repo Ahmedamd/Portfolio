@@ -52,3 +52,58 @@
   max-width: none;
   line-height: var(--line-height-loose);
 }
+
+
+/* Styling for header */
+.header {
+  width: 100%;
+  padding: 15px 30px;
+}
+
+/* Flex container for navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Spread logo and links to opposite ends */
+  align-items: center;            /* Vertically align items */
+}
+
+/* Logo styling */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  
+}
+
+
+
+body{
+  /* background-color: antiquewhite; */
+  background-color: whitesmoke;
+  
+  
+}
+
+section{
+  height: 100vh;
+
+}
+
+
+
+
+/* src/styles/global.css or a similar stylesheet */
+.animated-section {
+  opacity: 0; /* Start hidden */
+  transform: translateY(20px); /* Start slightly below the original position */
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Transition for both opacity and position */
+}
+
+.animated-section.visible {
+  opacity: 1; /* Visible when scrolled into view */
+  transform: translateY(0); /* Reset to original position */
+}
+
+
+
+
+

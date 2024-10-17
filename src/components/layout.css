@@ -2,10 +2,12 @@
   --border-radius: 4px;
   --color-text: #333;
   --color-primary: #7026b9;
-  --color-code-bg: #fff4db;
+  --color-code-bg: #8d7641;
   --color-code: #8a6534;
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    --font-global:  Apercu, "Source Sans Pro", system, system-ui, -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    
   --font-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
     "Courier New", monospace;
   --font-lg: 18px;
@@ -21,7 +23,7 @@
   --space-4: 24px;
   --space-5: 32px;
   --space-6: 64px;
-  --size-content: 54rem;
+  --size-content: 1200px;
   --size-gutter: var(--space-5);
   --size-gap: var(--space-6);
 }
@@ -37,9 +39,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   color: var(--color-text);
-  font-family: sans-serif;
-  font-family: var(--font-sans);
-  font-weight: normal;
+  /* font-family: sans-serif; */
+  font-family: var(--font-global);
+  
   margin: 0;
   word-wrap: break-word;
 }
@@ -198,7 +200,8 @@ acronym {
 }
 tt,
 code {
-  background-color: var(--color-code-bg);
+background-color: var(--color-code-bg);  /* background-color: white; */
+
   border-radius: var(--border-radius);
   color: var(--color-code);
   font-family: var(--font-mono);
@@ -222,3 +225,352 @@ pre tt:before,
 pre tt:after {
   content: none;
 }
+
+.about{
+  padding: 120px 100px;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+width: 80%;
+ 
+  text-align: left;
+  
+  /* background-color: antiquewhite; */
+
+}
+
+.intro-hello{
+  font-size: 43px;
+  display: flex;
+  gap: 20px;
+  font-weight: 500;
+  align-items: center;
+
+}
+
+.emoji {
+  font-size: 2.5rem; /* Emoji size */
+  animation: wave 1s ease-in-out 5; /* Apply waving animation 3 times */
+}
+
+/* Waving Animation */
+@keyframes wave {
+  0%, 20%, 50%, 80%, 100% {
+    transform: rotate(0deg); /* Start and end with no rotation */
+  }
+  10% {
+    transform: rotate(15deg); /* Rotate slightly to the right */
+  }
+  30% {
+    transform: rotate(-10deg); /* Rotate slightly to the left */
+  }
+}
+.intro-content{
+  font-size: 45px;
+}
+
+.intro-contact{
+  font-size: 30px;
+  display: flex;
+  gap: 15px;
+  font-weight: 500;
+  align-items: center;
+}
+
+ .intro-contact .rightPointFinger{
+  font-size: 40px;
+}
+.highlight_link {
+  position: relative;
+  color: black; /* Text color */
+  text-decoration: none; /* Remove default underline */
+  display: inline-block; /* Required for positioning the pseudo-element */
+  padding: 5px 0; /* Add vertical padding for spacing */
+}
+
+.highlight_link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0; /* Position at the bottom */
+  width: 100%; /* Full width */
+  height: 3px; /* Height of the underline */
+  background: maroon; /* Underline color */
+  transform: scaleX(0); /* Initially hidden (0% width) */
+  transform-origin: left; /* Start the scaling from the left */
+  transition: transform 0.7s ease-out; /* Animate the scaling */
+}
+
+.highlight_link:hover::after {
+  transform: scaleX(1); /* Scale to full width on hover */
+}
+
+/* end of About Page */
+
+
+
+.background,.work-experience,.Project-Section{
+
+  padding: 120px 100px;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display:grid;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  width: 100%;
+  text-align: left;
+  
+}
+
+.about-header,.exp-header,.proj-header{
+  font-size: 2.2rem;
+  display: flex;
+  gap: 20px;
+  
+  align-items: center;
+  font-weight: bold;
+}
+
+.line{
+height: 1.5px;
+width:750px;
+background-color: rgb(105, 99, 99);
+}
+
+.about-container{
+  display: flex;
+  gap: 20px;
+}
+
+.about-content,.points,.container{
+  font-size: 1.1rem;
+  line-height: 1.7;
+  
+  
+  
+}
+
+.tech-stack{
+  display: flex;
+  gap: 4rem;
+}
+
+.icon-projects {
+  display: inline-block;  /* Ensure the anchor is treated as a block for hover effects */
+}
+
+.btn {
+  width: 70px;           /* Set the width of the icon */
+  height: 70px;          /* Set the height of the icon */
+  transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for transform and filter effects */
+}
+
+.icon-projects:hover .btn {
+  transform: scale(1.1); /* Scale the icon slightly larger */
+  filter: brightness(1.2); /* Optional: brighten the icon on hover */
+}
+
+
+/* experience  */
+
+.work-experience{
+  grid-template-rows: 15% 20% 50% 10%;
+}
+.title{
+  font-size: 21px;
+}
+.date{
+  font-size: 15px;
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+
+.download-btn {
+  background-color: maroon; /* Green background */
+  border: solid black 2px;
+  color: white; /* White text */
+  padding: 10px 10px; /* Some padding */
+  text-align: center; /* Center text */
+  display: inline-block; /* Make the button inline */
+  font-size: 20px; /* Increase font size */
+  font-weight: 600;
+  
+  border-radius: 5px; /* Rounded corners */
+  width:250px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer; 
+  margin: 0 auto;
+  
+}
+
+.download-btn:hover {
+  background-color: #dddddd; /* Darker green on hover */
+  transform: scale(1.05); /* Slight scale up on hover */
+}
+
+
+
+
+
+ #workLink.highlight_link {
+  color: rgb(128, 0, 0);
+  cursor: pointer;
+}
+
+.title{
+  font-size: 23px;
+}
+
+.right-Arrow{
+  width: 50px;
+  height: 50px;
+  transform: translateY(44px);
+  transition: transform 0.3s ease; /* Smooth transition for movement */
+}
+
+.pathtoImage{
+
+gap: 20px;
+font-size: 1.5rem;
+transition: transform 0.5s ease;
+margin-top: 30px;
+
+}
+
+
+a.resume-Link {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+
+
+.pathtoImage a:hover + span .right-Arrow {
+  transform: translate(10px,44px); /* Move the arrow 10px to the right on hover */
+
+}
+
+
+.pathtoImage a:hover{
+  color: maroon;
+  transition: transform 0.5s ease;
+}
+
+/* Projects Section */
+
+
+.proj-tech{
+  display: flex;
+
+  font-size: 15px;
+  gap:30px;
+
+
+}
+
+.tech{
+  border: 1.5px solid maroon;
+  padding: 7px;
+  border-radius: 5px;
+  color: maroon;
+}
+
+.container{
+  display: flex;
+}
+
+.project{
+  display: grid;
+  grid-template-columns: 20% 30% 30% 30%;
+  justify-content: space-around;
+  
+}
+
+.project-title, .proj-tech{
+  margin-bottom: 1rem;
+}
+
+a{
+
+}
+
+.btn{
+  width:30px;
+  height:30px;
+  margin-top: 1rem;
+
+}
+
+.project-links{
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-section{
+  
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display:grid;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: center;
+  width: 100%;
+  text-align: left;
+  align-items: center;
+
+  
+}
+
+.footer-paragraph{
+  font-size: 1.5rem;
+
+}
+
+.bottom-section{
+  height: 5vh;
+  
+  display: flex;
+  justify-content: center;
+  transform: translateY(25px);
+  
+}
+
+.Ahmed{
+  color: maroon;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+.Ahmed:hover{
+  transform: scale(1.1);
+}
+
+
+.dept{
+
+  color: maroon;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
