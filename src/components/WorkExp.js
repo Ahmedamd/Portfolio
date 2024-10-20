@@ -27,13 +27,13 @@ import rightArrow from "../images/right-arrow-b.svg";
     
     <div className="work-title">
         <div className="title">Multimedia Technician - Learning Infrastructure team</div>
-        <div className="title"> <a id= "workLink " className="highlight_link "  href="https://www.linkedin.com/company/esdcedsc/posts/?feedView=all">@ Employment Social Development Canada</a></div>
-        <p className="date">November 2022 - Present</p>
+        <div className="title flex"> <a id= "workLink " className="highlight_link "  href="https://www.linkedin.com/company/esdcedsc/posts/?feedView=all">@ Employment Social Development Canada</a> <p className="date">November 2022 - Present</p></div>
+        
     </div>
     
     <div className="points">
 
-        <ul>
+        <ul className="custom-bullet">
 
             <li className="point">
                 

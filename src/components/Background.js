@@ -42,7 +42,7 @@ import MyImageComponent from "./imageComponent";
                      <p>Here are technologies that I have worked with recently:</p> 
 
                      <p className="tech-stack" >
-                      <ul>
+                      <ul className="custom-bullet">
                           <li> JavaScript</li>
                           <li> React.js</li>
                           <li> Node.js</li>
@@ -50,7 +50,7 @@ import MyImageComponent from "./imageComponent";
                       
                       </ul>
 
-                      <ul>
+                      <ul className="custom-bullet">
                           <li> Gatsby</li>
                           <li> MongoDB</li>
                           <li> Git</li>
@@ -68,7 +68,7 @@ import MyImageComponent from "./imageComponent";
 
                         < MyImageComponent/>
                     
-                </div>
+              </div>
               
         </div>
 
