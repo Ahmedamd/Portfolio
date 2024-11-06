@@ -1,6 +1,6 @@
 # Portfolio
 
-A personal portfolio website built with Gatsby to showcase projects, skills, and experience. This site is designed to be fast, accessible, and user-friendly.
+A personal portfolio website built with Gatsby to showcase projects, skills, and experience.
 
 ## Features
 
