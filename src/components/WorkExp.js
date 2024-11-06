@@ -54,6 +54,11 @@ import rightArrow from "../images/right-arrow-b.svg";
             <li className="point">Designed and developed an Image Cropper and Optimizer tool in JavaScript enabling users to modify images. Implemented
             a feature to accurately preview the appearance of modified images within the ADAPT authoring tool streamlining the design workflow process</li>
 
+            <li className="point">
+            Utilized the WET Template to develop a website hosting multimedia and e-learning projects,
+             creating a structured and accessible platform to streamline information sharing and resource access.
+            	</li>
+
             <li className="point">Collaborated cross-functionally with course designers, 
                 team leads, and developers to deliver solutions that met client 
                 requirements and project timelines.</li>

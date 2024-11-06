@@ -338,6 +338,10 @@ width: 80%;
   
 }
 
+.Project-Section{
+  height: 150vh;
+}
+
 .about-header,.exp-header,.proj-header{
   font-size: 2.2rem;
   display: flex;
