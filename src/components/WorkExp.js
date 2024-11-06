@@ -27,13 +27,13 @@ import rightArrow from "../images/right-arrow-b.svg";
     
     <div className="work-title">
         <div className="title">Multimedia Technician - Learning Infrastructure team</div>
-        <div className="title"> <a id= "workLink " className="highlight_link "  href="https://www.linkedin.com/company/esdcedsc/posts/?feedView=all">@ Employment Social Development Canada</a></div>
-        <p className="date">November 2022 - Present</p>
+        <div className="title flex"> <a id= "workLink " className="highlight_link "  href="https://www.linkedin.com/company/esdcedsc/posts/?feedView=all">@ Employment Social Development Canada</a> <p className="date">November 2022 - Present</p></div>
+        
     </div>
     
     <div className="points">
 
-        <ul>
+        <ul className="custom-bullet">
 
             <li className="point">
                 
@@ -48,11 +48,16 @@ import rightArrow from "../images/right-arrow-b.svg";
 
             <li className="point">
                         
-                Designed and coded multiple web applications in HTML, CSS, and JavaScript that mirror existing departmental systems, strategically incorporating overlays for interactive,
-            step-by-step training. Systems utilized by 30+ users, enhancing departmental training efficiency.</li>
+            Designed and implemented multiple system simulation tools in HTML, CSS, and JavaScript that mirror existing departmental systems, strategically incorporating overlays for an interactive,
+             step-by-step training. Systems utilized by 30+ users, enhancing departmental training efficiency.</li>
 
             <li className="point">Designed and developed an Image Cropper and Optimizer tool in JavaScript enabling users to modify images. Implemented
             a feature to accurately preview the appearance of modified images within the ADAPT authoring tool streamlining the design workflow process</li>
+
+            <li className="point">
+            Utilized the WET Template to develop a website hosting multimedia and e-learning projects,
+             creating a structured and accessible platform to streamline information sharing and resource access.
+            	</li>
 
             <li className="point">Collaborated cross-functionally with course designers, 
                 team leads, and developers to deliver solutions that met client 

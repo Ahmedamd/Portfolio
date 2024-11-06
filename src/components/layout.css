@@ -226,6 +226,11 @@ pre tt:after {
   content: none;
 }
 
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+}
 .about{
   padding: 120px 100px;
   height: 100vh;
@@ -333,6 +338,10 @@ width: 80%;
   
 }
 
+.Project-Section{
+  height: 150vh;
+}
+
 .about-header,.exp-header,.proj-header{
   font-size: 2.2rem;
   display: flex;
@@ -366,8 +375,27 @@ background-color: rgb(105, 99, 99);
   gap: 4rem;
 }
 
+
+ul.custom-bullet {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.custom-bullet li {
+  position: relative;
+  padding-left: 30px;
+}
+
+ul.custom-bullet li::before {
+  content: "▶";
+  position: absolute;
+  left: 0;
+  color: maroon;
+}
+
+
 .icon-projects {
-  display: inline-block;  /* Ensure the anchor is treated as a block for hover effects */
+  display: inline-block; 
 }
 
 .btn {
