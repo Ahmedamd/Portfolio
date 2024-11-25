@@ -11,7 +11,7 @@ A personal portfolio website built with Gatsby to showcase projects, skills, and
 ## Tech Stack
 
 - **Front-end**: Gatsby, React
-- **Additional Libraries**: Gatsby plugins for SEO, images, and more
+- **Additional Libraries**: Gatsby plugins for SEO, images
 
 ## Installation
 
